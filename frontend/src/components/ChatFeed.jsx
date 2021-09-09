@@ -17,7 +17,6 @@ export const ChatFeed = (props) => {
       const message = messages[key];
       const lastMessage = index === 0 ? null : keys[index - 1];
       const isMyMessage = userName === message.sender.username;
-
       const renderReadReceipts = (message, isMyMessage) => {
         console.log({ people: chat.people });
         return chat.people.map(
